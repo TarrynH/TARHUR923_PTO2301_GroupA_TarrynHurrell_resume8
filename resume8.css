@@ -1,0 +1,398 @@
+
+/**** Specify font and background ****/
+body, html {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e1e5e6;
+    
+}
+
+#border {
+    border: 15px solid #316472 ;
+}
+
+/**** Hero image ****/
+.hero-image {
+  background-image: linear-gradient(rgba(212, 113, 14, 0.5), rgba(0, 0, 0, 0.5)) , url('../geometric.jpg');
+  height: 60%;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/**** text inside hero image ****/
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+/**** Links ****/
+.bar a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+/**** Links when hovered over ****/
+.bar a:hover {
+    color: #1b373f;
+    text-shadow: 0 0 1px black;
+}
+
+/**** Navigation Bar ****/ 
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 12vh;
+
+    background-color: #316472 ;
+    position: sticky;
+
+}
+
+/**** Navigation Items ****/
+.options {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    text-align: center;
+}
+
+
+/**** flex container for about section ****/
+.introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    align-items: center;
+}
+
+/**** Photo ****/
+.portrait {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    order: 1;
+    width: 50vw; 
+    display: inline; 
+}
+
+/**** intro paragraph ****/
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    order: 2;
+    width: 25vw;  
+    display: inline;  
+    padding: 2vh 2vw; 
+}
+
+/**** education heading ****/
+#educheading {
+    color: white;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: #316472;
+}
+
+/**** flex container for 1st education item ****/
+.education1 {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10vh;
+    border-bottom:5px solid #316472 ;
+    
+}
+
+/**** flex item for 1st educ date ****/
+.educ1date {
+    display: flex;
+    width: 50vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    font-weight: 500;
+}
+
+/**** flex item for 1st educ description****/
+.educ1item {
+    display: flex;
+    width: 50vw;  
+    margin-right: 5vw;
+}
+
+/**** link to codespace ****/
+.educ1item a {
+    color: #841d7d;
+}
+
+/**** flex container for 2nd education item****/
+.education2 {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10vh;
+}
+
+/**** flex item for 2nd educ date ****/
+.educ2date {
+    display: flex;
+    width: 50vw;  
+    margin-left: 10vw;
+    margin-right: 5vw;
+    font-weight: 500;
+}
+
+/**** flex item for 2nd educ description ****/
+.educ2item {
+    width: 50vw;
+    margin-right: 5vw;
+}
+
+.educ2item ul {
+    list-style-type: circle;
+}
+
+
+/**** work heading ****/
+#workexp {
+    color: white;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: #316472;
+}
+
+/**** flex container for 1st work item ****/
+.experience1 {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row; 
+    padding-bottom: 5vh;
+    border-bottom:5px solid #316472 ;
+}
+
+/**** flex item for 1st work date ****/
+.work1date {
+    display: flex;
+    width: 50vw;
+    margin-left: 10vw;
+    font-weight: 500;
+}
+
+/**** flex item for 1st work description ****/
+.work1item {
+    width: 50vw;  
+    margin-right: 5vw;
+}
+
+.work1item ul {
+    list-style-type: circle;
+}
+
+/**** flex container for 2nd work item ****/
+.experience2 {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5vh;
+}
+
+/**** flex item for 2nd work date ****/
+.work2date {
+    display: flex;
+    width: 50vw;  
+    margin-left: 10vw;
+    font-weight: 500;
+}
+
+/**** flex item for 2nd work description ****/
+.work2item {
+    width: 50vw;
+    margin-right: 5vw;
+}
+
+
+.work2item ul {
+    list-style-type: circle;
+}
+
+
+/**** portfolio heading ****/
+#portfoliohead {
+    color: white;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: #316472;
+}
+
+/**** div for projects ****/
+.projects {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.projects ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.projects a {
+    color: #841d7d;
+}
+
+.projects ul li {
+    list-style-type: circle;
+    padding-bottom: 2vh;
+}
+
+/**** get in touch heading ****/
+#contactme {
+    text-align: center;
+    color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: #316472;
+}
+
+/**** flex container for contact options ****/
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+/**** flex item for mode of communication ****/
+.type {
+    padding-right: 5vw;
+}
+
+/**** make no bullets for list ****/
+.type ul li {
+    list-style-type: none;
+    padding-bottom: 2vh;
+}
+
+/**** make have bullets for list ****/
+.answer ul li {
+    list-style-type:circle ;
+    padding-bottom: 2vh;
+}
+
+
+/**** form div ****/
+#alt {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#alt a {
+    font-size:3.5vh;
+    color: #841d7d;
+}
+
+/**** form to fill out ****/
+form {
+    text-align: center;
+}
+
+/**** thank you message ****/
+#end {
+    text-align: center;
+    padding: 10vh;
+    color: #1f414b;
+}
+
+
+
+
+
+
+/**** change font sizes and flex proportions ****/
+@media only screen and  (max-width:768px) /**** mobile ****/
+{
+
+    body {
+        font-size: 14px;
+    }
+
+    .introduction { 
+        align-items: center;
+    }
+
+    .portrait {
+        order: 1;
+        width: 100%;
+        align-items: center;
+        text-align: center;   
+    }
+
+    .description {
+        order: 2;
+        width: 100%;
+    }
+
+    .hero-image{
+        background-image: linear-gradient(rgba(228, 13, 60, 0.534), rgba(0, 0, 0, 0.5)), url('../geometric.jpg');
+    }
+
+    .options {
+        font-size: 15px 
+    }
+}
+
+    
+@media only screen and (min-width:769px) and (max-width:1024px) /**** tablet ****/
+{
+    body {
+        font-size: 15px;
+    }
+
+    .hero-image{
+        background-image: linear-gradient(rgba(228, 99, 13, 0.534), rgba(0, 0, 0, 0.5)), url('../geometric.jpg');
+    }   
+
+    .options {
+        font-size: 18px 
+    }
+
+}
+
+
+@media only screen and (min-width:1025px) and (max-width:1215px) /**** laptop ****/
+{
+    body {
+        font-size: 16px;
+    }
+
+    .hero-image{
+        background-image: linear-gradient (rgba(228, 13, 60, 0.534), rgba(0, 0, 0, 0.5)), url('../geometric.jpg');
+    } 
+    .options {font-size: 18px }
+    }
+
+@media only screen and (min-width:1215px) /**** bigger than laptop ****/
+{
+
+    body {
+        font-size: 19px;
+    }
+}
